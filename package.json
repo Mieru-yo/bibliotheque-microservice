@@ -1,0 +1,41 @@
+{
+  "name": "library-service",
+  "version": "1.0.0",
+  "description": "Microservice de gestion de bibliothèque numérique",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --coverage",
+    "lint": "eslint src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mieru-yo/microservice.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@opentelemetry/auto-instrumentations-node": "^0.70.0",
+    "@opentelemetry/exporter-jaeger": "^2.5.1",
+    "@opentelemetry/sdk-node": "^0.212.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "pg": "^8.18.0",
+    "prom-client": "^15.1.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.1",
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2",
+    "testcontainers": "^11.12.0"
+  }
+}
