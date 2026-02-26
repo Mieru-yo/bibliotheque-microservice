@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-02-26T08:42:33.586Z",
+  "duration": "2 minutes + ramp-up/down",
+  "targetLoad": "100 VUs (~100 req/s)",
+  "results": {
+    "totalRequests": 36668,
+    "rps": "243.31",
+    "avgDuration": "193.25ms",
+    "p50": "undefinedms",
+    "p95": "454.91ms",
+    "p99": "undefinedms",
+    "maxDuration": "969.35ms",
+    "errorRate": "0.00%",
+    "httpReqFailed": 0
+  },
+  "thresholds": {
+    "p95Under500ms": "PASS",
+    "p99Under1s": "PASS",
+    "errorRateUnder5pct": "PASS"
+  }
+}
