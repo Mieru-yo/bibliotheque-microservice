@@ -340,13 +340,12 @@ Architecture en **3 couches** : Controller → Service → Repository.
 Pipeline GitHub Actions (`.github/workflows/ci-cd.yml`) :
 
 ```
-lint → test → build → push → deploy
+lint → test → build → push
 ```
 
 - **Lint** : ESLint
 - **Test** : Jest + couverture
 - **Build** : Docker multistage + scan Trivy
 - **Push** : Docker Hub
-- **Deploy** : kubectl rollout
 
 Déclenché sur push (`main`, `develop`) et pull requests.
